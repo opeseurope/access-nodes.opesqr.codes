@@ -446,6 +446,9 @@ template {
   width: 90%;
   border: 1px solid black;
 }
+.form .field ::placeholder {
+  color: orange;
+}
 .form .field textarea {
   padding: 20px;
   font-size: 16px;
