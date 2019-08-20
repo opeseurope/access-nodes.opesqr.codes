@@ -1,3 +1,746 @@
-body {
-  color: red;
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-nr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.bigger {
+  flex: 2.5;
+}
+
+.ones > .column {
+  flex: 0 0 100%;
+}
+
+.halves > .column {
+  flex: 0 0 50%;
+}
+
+.thirds > .column {
+  flex: 0 0 33.3333%;
+}
+
+.fourths > .column {
+  flex: 0 0 25%;
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    display: block;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 12px;
+  background-color: #000;
+  transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  pointer: cursor;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #43464d;
+}
+
+.button.strong {
+  padding: 16px 35px;
+  border-radius: 14px;
+  background-color: #fc0;
+  color: #001339;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.button.strong {
+  border-radius: 17px;
+  background-color: #fc0;
+  color: #000;
+}
+
+.button.strong:hover {
+  background-color: #f1f1f1;
+}
+
+.button.strong:active {
+  background-color: #e1e1e1;
+}
+
+body {
+  background: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.nav {
+  padding: 25px 30px;
+}
+.nav .logo h1 {
+  padding: 0;
+  margin: 0;
+}
+.nav .logo h1 a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: url("/img/opesqrcodes-logo.png");
+  width: 266px;
+  height: 38px;
+}
+.nav .logo h1 a span {
+  display: none;
+}
+.nav .menu {
+  text-align: right;
+}
+@media (max-width: 600px) {
+  .nav {
+    padding: 0;
+    margin: 0;
+  }
+  .nav .menu.contact-us {
+    display: none;
+  }
+  .nav.grid-nr {
+    display: block;
+  }
+  .nav .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .nav .logo h1 a {
+    background: url("/img/opes-europe-logo-big.png");
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .nav .menu {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.intro {
+  position: relative;
+  background: url("/img/intro-background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 557px;
+}
+.intro .intro-text {
+  padding-top: 140px;
+}
+.intro .intro-text .heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 64px;
+  line-height: 80px;
+  color: white;
+  font-weight: 600;
+  text-transform: none;
+  text-shadow: 3px 3px 0 #000;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  .intro .intro-text .heading {
+    font-size: 48px;
+  }
+}
+.intro .intro-text .subtext {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 200;
+}
+@media (max-width: 1300px) {
+  .intro .intro-text .subtext {
+    font-size: 16px;
+  }
+}
+.intro .intro-action {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.motto {
+  width: 80%;
+  margin: 350px auto 200px;
+}
+.motto .label {
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.motto .heading {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.6em;
+  color: black;
+  text-align: center;
+}
+
+.who-are-we {
+  padding: 80px 0;
+  background-color: #7323DC;
+}
+.who-are-we a {
+  color: #fff;
+}
+.who-are-we .text {
+  margin: 80px auto;
+  width: 60%;
+}
+.who-are-we .text .heading {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.6em;
+  color: #FFF;
+}
+.who-are-we .text .description {
+  color: #FFF;
+  line-height: 2em;
+}
+.who-are-we .logos {
+  padding-top: 70px;
+}
+.who-are-we .opes-europe-logo-big {
+  margin: 0 auto;
+  background: url(/img/opes-europe-logo-big.png);
+  width: 250px;
+  height: 250px;
+}
+.who-are-we .opes-unite-logo-big {
+  margin: 0 auto;
+  background: url(/img/opes-unite-logo-big.png);
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 500px) {
+  .who-are-we .opes-logo-big {
+    margin: 0 auto;
+    background: url(/img/opes-europe-logo-big.png);
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.our-technology {
+  padding: 80px 0;
+  background: url("/img/our-technology-background.png");
+  background-size: cover;
+  background-position: center;
+}
+.our-technology .text {
+  margin: 0px auto 40px auto;
+  width: 60%;
+}
+.our-technology .text .heading {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.6em;
+  text-align: center;
+  color: black;
+}
+.our-technology .text .description {
+  color: black;
+  text-align: center;
+  line-height: 2em;
+  opacity: 0.6;
+}
+.our-technology .tech-cards {
+  width: 80%;
+  margin: 0 auto;
+}
+.our-technology .tech-cards .card {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+.our-technology .tech-cards .tech0 {
+  background: url(/img/our-tech-0.png);
+  width: 300px;
+  height: 300px;
+  background-size: 300px 300px;
+}
+.our-technology .tech-cards .tech1 {
+  background: url(/img/our-tech-1.png);
+  width: 300px;
+  height: 300px;
+  background-size: 300px 300px;
+}
+.our-technology .tech-cards .tech2 {
+  background: url(/img/our-tech-2.png);
+  width: 300px;
+  height: 300px;
+  background-size: 300px 300px;
+}
+
+.current-project {
+  padding: 80px 0;
+}
+@media (min-width: 900px) {
+  .current-project .column:first-child {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  .current-project .column:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+}
+.current-project .text {
+  margin: 80px 0;
+  width: 60%;
+}
+@media (max-width: 900px) {
+  .current-project .text {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 600px) {
+  .current-project .text {
+    width: 80%;
+  }
+}
+.current-project .text .heading {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.6em;
+  color: white;
+}
+@media (max-width: 900px) {
+  .current-project .text .heading {
+    text-align: center;
+  }
+}
+.current-project .text .description {
+  color: white;
+  line-height: 2em;
+}
+@media (max-width: 900px) {
+  .current-project .text .description {
+    text-align: center;
+  }
+}
+.current-project .opes-lens-logo {
+  background: url(/img/opes-lens-logo-big.svg);
+  width: 562px;
+  height: 368px;
+}
+@media (max-width: 1280px) {
+  .current-project .opes-lens-logo {
+    margin-top: 60px;
+    width: 400px;
+    height: 266.6666666667px;
+    background-size: 400px 266.6666666667px;
+  }
+}
+@media (max-width: 900px) {
+  .current-project .opes-lens-logo {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 600px) {
+  .current-project .opes-lens-logo {
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+  }
+}
+
+.connect-now {
+  padding: 80px 0;
+  background: #7323DC;
+}
+.connect-now .text {
+  margin: 0px auto 40px auto;
+  width: 60%;
+}
+.connect-now .text .heading {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.6em;
+  text-align: center;
+  color: white;
+}
+.connect-now .text .description {
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  opacity: 0.6;
+}
+.connect-now .connect-now-action {
+  text-align: center;
+}
+
+/*# sourceMappingURL=site.css.map */
