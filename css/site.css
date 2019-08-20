@@ -425,6 +425,45 @@ template {
   background-color: #e1e1e1;
 }
 
+.form {
+  margin: 50px auto;
+  border: 1px solid black;
+  padding: 20px 40px;
+}
+.form .section p {
+  line-height: 1.8em;
+  color: #555;
+}
+.form .field {
+  margin-bottom: 50px;
+}
+.form .field label {
+  display: block;
+}
+.form .field input {
+  padding: 20px;
+  font-size: 32px;
+  width: 90%;
+  border: 1px solid black;
+}
+.form .field textarea {
+  padding: 20px;
+  font-size: 16px;
+  width: 90%;
+  height: 200px;
+}
+.form .field .desc {
+  margin-top: 4px;
+  color: #ccc;
+}
+.form .field #account_name {
+  width: 14em;
+}
+.form .submit-action {
+  text-align: center;
+  margin-top: 80px;
+}
+
 body {
   background: #FFF;
   font-family: "Montserrat", sans-serif;
@@ -490,6 +529,7 @@ body {
 }
 .intro .intro-text {
   padding-top: 140px;
+  padding-bottom: 140px;
 }
 .intro .intro-text .heading {
   margin-top: 10px;
@@ -525,7 +565,7 @@ body {
 
 .motto {
   width: 80%;
-  margin: 350px auto 200px;
+  margin: 180px auto;
 }
 .motto .label {
   color: black;
@@ -741,6 +781,10 @@ body {
 }
 .connect-now .connect-now-action {
   text-align: center;
+}
+
+#request-access-node-panel {
+  margin: 0 50px;
 }
 
 /*# sourceMappingURL=site.css.map */
