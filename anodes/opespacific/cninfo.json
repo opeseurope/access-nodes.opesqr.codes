@@ -1,0 +1,13 @@
+{
+    "icon": "https://opespacific.io/branding/opes-pacific-logo.png",
+    "org": {
+        "branding": {
+            "logo_256": "https://opespacific.io/branding/opes-pacific-logo-256.png"
+        },
+        "email": "support@opespacific.io"
+    },
+    "producer_name": "opespacific",
+    "summary": "A Founding Community Node",
+    "title": "OPES Pacific Founding Community Node",
+    "website": "https://opespacific.io"
+}
